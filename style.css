@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #080808;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    text-align: center;
+    height: 60px;
+    background-color: #121212;
+}
+
+.title h1{
+    color: #ff004f;
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.weather-div{
+    display: flex;
+}
+
+.form-div{
+    flex-basis: 30%;
+    height: 500px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    background-color: #121212;
+}
+
+.weater-data{
+    flex-basis: 70%;
+    height: 500px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 20px;
+    background-color: #121212;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.form-div .form{
+    background-color: #232323;
+     margin: 50px 20px 0 20px;
+     line-height: 25px;
+     padding: 20px;
+     border-radius: 10px;
+}
+
+.form-div .form p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 15px 0;
+}
+
+.form-div .form input{
+    background-color: #585858;
+    color: #fff;
+    outline: none;
+    width: 100%;
+    padding: 8px;
+    margin: 15px 0;
+    font-size: 18px;
+    border: 0;
+    border-radius: 6px;
+}
+
+.form-div .form button{
+    text-decoration: none;
+    width: fit-content;
+    padding: 8px 40px;
+    font-size: 16px;
+    display: block;
+    margin:15px auto;
+    background-color: #232323;
+    color: #fff;
+    border: 1px solid #ff004f;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.form-div .form button:hover{
+    background-color: #ff004f;
+}
+
+.name-div{
+    background-color: #232323;
+    height: 40%;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.name{
+    padding-top: 20px;
+    gap: 10px;
+}
+
+.name{
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.name-div p{
+    margin-top: 10px;
+    padding-left: 30px;
+}
+
+#weather-icon{
+    margin-left: 20px;
+}
+
+
+/* media queries */
+
+@media (max-width: 600px){
+    .weather-div{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assests/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <div class="container">
+        <div class="title">
+            <h1>Weather</h1>
+        </div>
+        <div class="weather-div">
+            <div class="form-div">
+                <div class="form">
+                    <p>Enter a City Name</p>
+                    <input type="text" placeholder="E.g., Delhi, Rampur" data-searchInput>
+                    <br>
+                    <button type="submit" data-search>Search</button>
+                </div>
+            </div>
+            <!-- user-info-container -->
+            <div class="weater-data">
+                <div class="name-div">
+                     <!-- city name and flag -->
+                    <div class="name">
+                        <p data-cityName></p>
+                        <img data-countryIcon>
+                    </div>
+                    <!-- weather description -->
+                    <p data-weatherDesc></p>
+                    <!-- weather icon -->
+                    <img id="weather-icon" data-weatherIcon>
+                    <!-- temperature -->
+                    <p data-temp></p>
+                </div>     
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
